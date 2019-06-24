@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra password</title>
+</head>
+<body>
+    <script>
+        function kiemtra(str) {
+            regexp = /^[A-Za-z0-9]{8,18}$/;
+            if (regexp.test(str)){
+                alert("Tên hợp lệ");
+            } else alert("Tên không hợp lệ");
+        }
+        let ten = prompt("Nhập pass");
+        kiemtra(ten);
+
+    </script>
+</body>
+</html>
